@@ -39,7 +39,7 @@ parseInput inp =
                 stacks'' = 
                     map (\i -> filter (\c -> c /= ' ')(stacks' !! i)) 
                         [1,5..(length stacks')] 
-                in (stacks'',  tail moves)
+                in (stacks'', tail moves)
         Nothing -> error "invalid input"
 
 parseMove :: String -> (Int, Int, Int)
